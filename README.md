@@ -23,4 +23,5 @@ Download the latest release from here -
 ![series-ninja](https://github.com/keshavbhatt/series-ninja/blob/master/screenshots/win/sc3.jpg?raw=true)
 ![series-ninja](https://github.com/keshavbhatt/series-ninja/blob/master/screenshots/win/sc4.jpg?raw=true)
 ![series-ninja](https://github.com/keshavbhatt/series-ninja/blob/master/screenshots/win/sc5.jpg?raw=true)
+![series-ninja](https://github.com/keshavbhatt/series-ninja/blob/master/screenshots/win/sc6.jpg?raw=true)
 
