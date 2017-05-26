@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Github Release Stats For Ktube Media Downloader</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Get the latest release stats like download counts, release dates, author on any Github project">
+    <meta name="keywords" content="Github, release, download, count">
+    <link rel="icon" href="img/favicon.ico">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="third-party/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href=".">
+                    <span class="glyphicon glyphicon-stats"></span>&nbsp;
+                    Github Release Stats For Ktube Media Downloader
+                </a>
+            </div>
+            <div class="collapse navbar-collapse" id="main-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+                <div class="form form-inline">
+                    <div class="form-group">
+                        <input   type="text" class="form-control" id="username" value="keshavbhatt" placeholder="Github username">
+                    </div>
+                    <div class="form-group">
+                        <input   type="text" class="form-control" id="repository" value="Ktube-media-downloader" placeholder="Repository name">
+                    </div>
+                    <button class="btn btn-primary" id="get-stats-button">Get the latest release stats!</button>
+                </div>
+            </div>
+        </div> 
+        <div class="row" id="ads">
+            <div class="col-md-6 col-md-offset-2"> 
+                <script type="text/javascript" src="//cdn.chitika.net/getads.js" async></script>
+            </div>
+        </div>
+        <div class="row" id="stats-result">
+        </div>
+        <div id="loader-gif">
+            <img src="img/gif-load.gif">
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            Made with <span class="glyphicon glyphicon-heart"></span> for <a href="https://keshavbhatt.github.io/Ktube-media-downloader/" target="_blank">Ktube Media Downloader</a>
+        </div>
+    </div>
+</body>
+<script type="text/javascript" src="third-party/jquery/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="third-party/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="third-party/typahead/bootstrap3-typeahead.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+</html>
