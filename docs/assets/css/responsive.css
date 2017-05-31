@@ -1,0 +1,66 @@
+/* #Tablet (Landscape)
+================================================== */
+
+@media only screen and (max-width: 1024px) {
+ 
+.content_background, #header {margin: 0 auto;}
+.primary-container-background .primary-container {width:100% !important;}
+
+/* Remove border-radius */
+.hornav-block, #footermenu {
+    border-radius: 0;
+}
+/* Hide default hornav menu */
+#hornav {display:none !important;}
+/* Show mobile hornav menu */
+.slicknav_menu {display:block;}
+/* Disable CSS animations */
+.animated {
+    -webkit-animation-duration: 0;
+    animation-duration: 0;
+    -webkit-animation-delay: 0;
+    animation-delay: 0;
+}
+
+}
+
+/* #Tablet (Portrait)
+================================================== */
+    
+@media only screen and (max-width: 959px) {
+
+
+}
+
+/* #Mobile (Landscape)
+================================================== */
+
+@media only screen and (max-width: 767px) {
+
+/* Expand room for social icons */
+#container_header {
+	padding-left: 0;
+	padding-right: 0;
+}
+/* Fix Carousel arrow position*/
+.carousel-control.right span, .carousel-control.icon-next span {
+    right: 20%;
+}
+.carousel-control.left span, .carousel-control.icon-prev span {
+    left: 15%;
+}
+
+}
+
+/*  #Mobile (Portrait)
+================================================== */
+
+@media only screen and (max-width: 440px) {
+
+/* Hide slogan */
+p.site-slogan {
+    display: none;
+}
+	
+}
+	

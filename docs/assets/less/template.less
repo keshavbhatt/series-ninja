@@ -1,0 +1,193 @@
+@import "mixins.less";
+@import "variables.less";
+
+/*-----------------------------------------------------------------------------------*/
+/* Basic */
+/*-----------------------------------------------------------------------------------*/
+
+html {
+	overflow-y: scroll;
+}
+body {
+	line-height: 1.7em;
+	font-size: 14px;
+	background-color: @brand-primary-dark;
+}
+#body_bg { 
+	background-attachment: scroll;
+	-webkit-background-size: cover !important;
+	-moz-background-size: cover !important;
+	-o-background-size: cover !important;
+	background-size: cover !important;
+	position: relative;
+	background-color: #ccc3d4;
+	background: url(../img/bg.jpg) 50% 0% no-repeat fixed;
+}
+.primary-container-background .primary-container {
+	background-color: #f0eef3;
+	height:100%;
+	position: relative; 
+	margin:0 auto;
+	-moz-box-shadow: 0 0px 40px rgba(0,0,0,0.35); 
+  	-webkit-box-shadow: 0 0px 40px rgba(0,0,0,0.35); 
+  	box-shadow: 0 0px 40px rgba(0,0,0,0.35); 
+  	border-radius: 8px;
+  	width: 1080px;
+}
+.primary-container-background {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+.primary-container {
+  position: relative;
+  height: 100%;
+}
+.primary-container-group {position: relative;}
+
+.container {
+	max-width: 1080px;
+	padding-left: @grid-gutter-width;
+	padding-right: @grid-gutter-width;
+	width: 100%;
+}
+.container.no-padding {
+	padding-left: @grid-gutter-width / 2 !important;
+	padding-right: @grid-gutter-width / 2 !important;
+}
+#container_header {height: 80px;}
+#container_hornav {position:relative; top:0px;}
+#container_slideshow {
+    overflow:hidden;
+    z-index: 0;
+}
+#container_spacer1 {height:60px; } 
+#container_spacer3 {height:40px; } 
+
+/*-----------------------------------------------------------------------------------*/
+/* Header */
+/*-----------------------------------------------------------------------------------*/
+
+#header {
+	position: relative; 
+	height:100px; 
+}
+
+/* Logo */ 
+.logo {
+	position:absolute;
+	a {
+		left: 15px;
+		top:30px;
+		display:block; 
+		position:relative; 
+		z-index:20;
+	}
+} 
+p.site-slogan {
+	color: #b1a5bd;
+    font-size: 11px;
+    letter-spacing: 8px;
+    margin: 0;
+    padding:0;
+    right: 15px;
+    text-align: right;
+    top: 68px;
+    position: absolute;
+    z-index: 20;
+    white-space:nowrap;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Footer */
+/*-----------------------------------------------------------------------------------*/
+
+#base {
+	background-color: @brand-primary;
+	overflow: hidden;
+	color:#dddddd;
+	color: rgba(255, 255, 255, 0.8) !important;
+	a {
+		color: #eeeeee !important;
+		color: rgba(255,255,255,0.8) !important;
+	}
+	li {
+		a {
+			text-shadow: none;
+			color:#ffffff;
+		}
+	}
+	h3 {
+		text-shadow: none;
+		color:#ffffff;
+		opacity: 0.8;
+	}
+}
+
+/* Footer Menu */
+#footermenu {
+	background-color: @brand-primary-dark;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 0 0 5px 5px;
+	ul {
+		margin: 0;
+		li {
+			border-right: 1px solid rgba(255, 255, 255, 0.2);
+			padding-left: 10px;
+			padding-right: 10px;
+			&:last-child {
+				border:none;
+			}
+			a {
+				color: #eeeeee;
+				color: rgba(255, 255, 255, 0.8);
+				font-size:14px;
+			    &:hover {
+			    	color: #ffffff;
+			    }
+			}
+		}
+	}
+}
+
+/* Copyright */
+ #copyright {
+	font-size:14px;
+    color: #eeeeee;
+    p {
+    	padding:0;
+		margin:0;
+		text-align: center;
+    }
+}
+
+/*-----------------------------------------------------------------------------------*/
+/* Miscellaneous */
+/*-----------------------------------------------------------------------------------*/
+
+.visible {
+  opacity: 1 !important;
+}
+.animatebox {
+  background: #cccccc;
+  background: rgba(0, 0, 0, 0.05);
+  border: 1px solid #dddddd;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  font-size: 22px;
+  margin: 30px auto 60px;
+  padding: 80px 0;
+  text-align: center;
+  max-width: 500px;
+  width: 100%;
+  color: #777777 !important;
+}
+h1.logo-text a {display:inline;}
+.logo a {
+	display: inline !important;
+	width: auto !important;
+}
+
+
+

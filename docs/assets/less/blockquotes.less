@@ -1,0 +1,39 @@
+/*-----------------------------------------------------------------------------------*/
+/* Blockquotes */
+/*-----------------------------------------------------------------------------------*/
+blockquote {
+	border: 1px solid @gray-lighter;
+    border-left: 5px solid @gray-lighter;
+    border-radius: 5px;
+    background: #fafafa;
+    font-size: 16px;
+    margin: 0 0 20px;
+    padding: 10px 20px;
+    &.right {
+    	text-align: right;
+    	border-width: 1px 5px 1px 1px !important;
+    	&.primary {
+    		border-left: 1px solid @gray-light;
+    		border-right: 5px solid @brand-primary-lighter;
+    	}
+    }
+    p {
+    	margin: 0;
+    }
+    &.bg-gray {
+    	background: @gray;
+    	border: 1px solid @gray-light;
+    	border-left: 5px solid @gray-light;
+    	color: #ffffff;
+    }
+    &.primary {
+    	/*border: 1px solid @brand-primary-lighter;*/
+    	border-left: 5px solid @brand-primary-lighter;
+    }
+    &.bg-primary {
+    	background: @brand-primary-light;
+    	border: 1px solid @brand-primary-lighter;
+    	border-left: 5px solid @brand-primary-lighter;
+    	color: #ffffff;
+    }
+}

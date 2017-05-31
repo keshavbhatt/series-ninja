@@ -1,0 +1,170 @@
+/*-----------------------------------------------------------------------------------*/
+/* Top Menu - Hornav */
+/*-----------------------------------------------------------------------------------*/
+
+.hornav-block {
+	background-color: #6e5f7c;
+	background-image: -moz-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.0) 100%); /* gradient overlay */
+	background-image: -o-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.0) 100%); /* gradient overlay */
+	background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.0) 100%); /* gradient overlay */
+	background-image: linear-gradient(to top, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.0) 100%); /* gradient overlay */
+	border-radius: 5px 5px 0 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	display:block;
+	height:100px;
+	position: relative;
+	width: 100%;
+}
+
+	#hornav ul > li > a:hover, #hornav ul > li.active > a {
+		background-color: #393040;
+	}
+
+#hornav {
+	position: relative;  
+	padding-top: 0px; 
+	padding-right:0px;
+	> ul {
+		background-color: rgba(0,0,0,0.2); 
+		border-radius: 0 5px 0 5px; 
+		padding: 0 10px 0 12px;
+		-moz-box-shadow: 				-1px -1px 1px rgba(0,0,0, 0.1) inset;
+		-webkit-box-shadow: 			-1px -1px 1px rgba(0,0,0, 0.1) inset;
+		box-shadow: 					-1px -1px 1px rgba(0,0,0, 0.1) inset;
+		> li {
+			margin:0px 5px; 
+			padding: 12px 0;
+			> a, > span {
+				background-color:#473d4f;
+				color: #dcd7e0;
+				display:block;
+				font-size:14px; 
+				letter-spacing:1px;
+				line-height: 1.4em;
+				padding: 8px 18px; 
+				text-decoration: none; 
+				margin: 0px 0px 0;
+				z-index: 1; 
+				-webkit-transition-duration: 	0.4s;
+				-moz-transition-duration: 		0.4s;
+				-o-transition-duration: 		0.4s;
+				-ms-transition-duration: 		0.4s;
+				transition-duration: 			0.4s;
+				-webkit-transition-property: 	background-color;
+				-moz-transition-property: 		background-color;
+				-o-transition-property: 		background-color;
+				-ms-transition-property: 		background-color;
+				transition-property: 			background-color;
+				-moz-box-shadow: 				0px 1px 0 rgba(0,0,0, 0.1) inset, 1px 0 0 rgba(0,0,0, 0.1) inset, 0px 0px 5px rgba(0,0,0, 0.1) inset;
+				-webkit-box-shadow: 			0px 1px 0 rgba(0,0,0, 0.1) inset, 1px 0 0 rgba(0,0,0, 0.1) inset, 0px 0px 5px rgba(0,0,0, 0.1) inset;
+				box-shadow: 					0px 1px 0 rgba(0,0,0, 0.1) inset, 1px 0 0 rgba(0,0,0, 0.1) inset, 0px 0px 5px rgba(0,0,0, 0.1) inset;
+				border-radius: 5px;
+				&:hover, &:active {
+					
+				}
+			}
+		}
+	}
+}
+
+/* Dropdown Menu */
+#hornav ul ul {
+	background: #F8F8F8;
+	border-radius: 5px;
+	position:relative;
+	-webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-ms-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	-o-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+	display: block;
+	list-style: none;
+	margin: 0px;
+	padding: 5px 0 !important;
+	min-width: 200px;
+	z-index: 20;
+	li {
+		min-height: 22px;
+  		float: none;
+  		position: relative;
+  		a, span {
+  			background-color: transparent;
+  			box-shadow: none;
+  			display: block;
+			padding: 6px 15px;
+			color: #555555 !important;
+			text-transform: none;
+			border-top: 1px solid rgba(0, 0, 0, 0.05);
+  		}
+	}
+	&:before {
+		background: transparent url('../img/menu_arrow.png') no-repeat 0 0;
+		content: "";
+		display: block;
+		height: 10px;
+		left: 26px;
+		position: absolute;
+		top: -10px;
+		width: 14px;
+	}
+}
+
+#hornav ul ul li:first-child a {
+	border: none;
+}
+#hornav ul ul li a:active,
+#hornav ul ul li a:focus,
+#hornav ul ul li a:hover {
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+#hornav ul ul li:hover a {
+  text-decoration: none;
+}
+#hornav ul ul ul:before {
+  display: none;
+}
+#hornav li ul,
+#hornav li ul li ul {
+  position: absolute;
+  height: auto;
+  min-width: 200px;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 300ms linear;
+  -o-transition: all 300ms linear;
+  -ms-transition: all 300ms linear;
+  -moz-transition: all 300ms linear;
+  -webkit-transition: all 300ms linear;
+  top: 80px;
+  z-index: 1000;
+}
+#hornav li:hover > ul,
+#hornav li ul li:hover > ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  top: 60px;
+}
+#hornav li ul li ul {
+  left: 220px;
+  top: 0;
+}
+#hornav li ul li:hover > ul {
+  top: 0px;
+  left: 200px;
+}
+#hornav ul ul .parent:after {
+    top: 10px;
+    right: 15px;
+    color: #777;
+    font-size: 14px;
+    content: "\f105";
+    position: absolute;
+    font-weight: normal;
+    display: inline-block;
+    font-family: FontAwesome; 
+}
