@@ -1,4 +1,4 @@
-# Series-Ninja for Linux and Windows
+# [Series-Ninja for Linux and Windows](https://keshavbhatt.github.io/series-ninja/)
 Stream and Download your favourite TV series/Movies on Ubuntu/Linux &amp; Windows Desktop [Download for Windows and Linux](https://github.com/keshavbhatt/series-ninja/releases)
 
 # Downloads Linux & Windows
